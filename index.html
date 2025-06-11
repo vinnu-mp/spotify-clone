@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="navopt">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="navopt">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#" class="searchin">search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="lib">
+            <i class="fa-solid fa-layer-group"></i>
+            <a href="#">Library </a>
+            <i class="fa-solid fa-plus lig"></i
+            ><i class="fa-solid fa-arrow-right lig"></i>
+          </div>
+          <div class="create">
+            <p>Create your first playlist</p>
+            <button type="button" class="btn btn-dark">Create</button>
+          </div>
+          <div class="letsfind">
+            <p>Lets find some podcasts to follow</p>
+            <button type="button" class="btn btn-dark">Find</button>
+          </div>
+        </div>
+      </div>
+      <div class="maincontent">
+        <div class="stickyy">
+          <div class="navleft">
+            <img src="./assets/backward_icon.png" height="32px" />
+            <img src="./assets/forward_icon.png" height="32px" />
+          </div>
+          <div class="navright">
+            <button type="button" class="btn">Explore Premium</button>
+            <button type="button" class="btn darker">
+              <i class="fa-solid fa-circle-down"></i>Install app
+            </button>
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="scroll">
+          <h2 class="recent">Recently Played</h2>
+          <div class="cardcontainer">
+            <div class="card">
+              <img src="./assets/card1img.jpeg" class="cardimg" />
+              <p class="title">Top50-Global</p>
+              <p class="info">Your daily updates of most played tracks</p>
+            </div>
+          </div>
+          <h2 class="recent">Trending now near you</h2>
+          <div class="cardcontainer">
+            <div class="card">
+              <img src="./assets/card2img.jpeg" class="cardimg" />
+              <p class="title">Mahiye Jinna</p>
+              <p class="info">
+                Ava Ray<br />Indie-pop artist known for dreamy vocals and lo-fi
+                beats.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/card4img.jpeg" class="cardimg" />
+              <p class="title">Naa Ready</p>
+              <p class="info">
+                Zayn Nova<br />Experimental guitarist blending synthwave with
+                rock vibes.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/card3img.jpeg" class="cardimg" />
+              <p class="title">Silent Ocean</p>
+              <p class="info">
+                Luma Kai<br />Chillstep DJ creating mellow electronic
+                soundscapes.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/card4img.jpeg" class="cardimg" />
+              <p class="title">Top-Global</p>
+              <p class="info">
+                Rio Blaze<br />Fusion drummer mixing Afrobeat with modern funk.
+              </p>
+            </div>
+          </div>
+          <h2 class="recent">Featured Charts</h2>
+          <div class="cardcontainer">
+            <div class="card">
+              <img src="./assets/card5img.jpeg" class="cardimg" />
+              <p class="title">Top Songs-Global</p>
+              <p class="info">Global<br />Enjoy unlimited all over the world</p>
+            </div>
+            <div class="card">
+              <img src="./assets/card6img.jpeg" class="cardimg" />
+              <p class="title">Top Songs-India</p>
+              <p class="info">India<br />Indian top classic</p>
+            </div>
+            <div class="card">
+              <img src="./assets/card1img.jpeg" class="cardimg" />
+              <p class="title">Top50-Global</p>
+              <p class="info">
+                Dont confuse!<br />I just added the random info
+              </p>
+            </div>
+          </div>
+          <br /><br/><br/><br>
+        </div>
+      </div>
+      <div class="player">
+        <div class="album">
+          <img
+            src="./Homework Assets/album_picture.jpeg"
+            height="70px"
+            class="belowimg"
+          />
+          <div>
+            <p class="daylight">Daylight</p>
+            <p class="david">David Kushner</p>
+          </div>
+        </div>
+        <div class="centre">
+          <div class="playback">
+            <img src="./assets/player_icon1.png" height="20px" class="light" />
+            <img src="./assets/player_icon2.png" height="20px" class="light" />
+            <img src="./assets/player_icon3.png" height="30px" class="bold" />
+            <img src="./assets/player_icon4.png" height="20px" class="light" />
+            <img src="./assets/player_icon5.png" height="20px" class="light" />
+          </div>
+          <div class="bar">
+            <span class="time">0:00</span>
+            <input type="range" class="progress" />
+            <span class="time">3:42</span>
+          </div>
+        </div>
+        <div class="controls">
+          <img src="./assets/Screenshot 2025-06-10 194333.png" class="optns" />
+        </div>
+
+        <div id="mobile-warning">
+          🚫 Sorry! This site is only available on desktop screens.<br />
+          You can open through desktop site in mobile.
+        </div>
+
+     
+    </div>
+
+  <script src="script.js"></script>
+  
+  </body>
+</html>
